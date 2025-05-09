@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Code Formatter</title>
+  <script type="module" crossorigin src="/assets/index-B-rrU44V.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CMPJuQzB.css">
+</head>
+
+<body>
+    <div class="min-h-screen w-full bg-zinc-900 text-white">
+        <div class="min-h-screen p-4">
+            <h1 class="text-4xl font-[bold]">AI-Powered JavaScript Formatter</h1>
+            <div
+                class="w-full min-h-[88vh] flex items-start border border-zinc-700 rounded-lg justify-center mt-4 gap-5 p-2">
+                <div class="w-[43.5%] h-[85vh]">
+                    <div class="h-full w-full border-2 border-zinc-700 rounded-xl overflow-hidden">
+                        <textarea name="textArea" class="h-full w-full bg-transparent p-2 outline-none placeholder:font-bold placeholder:text-zinc-600" id="userWillPaste" placeholder="Paste your JavaScript code here..."></textarea>
+                    </div>
+                </div>
+                <div class="w-[13%] h-[85vh] flex items-center justify-center flex-col px-4">
+                    <select id="styleSelector" class="text-white bg-transparent border-2 border-zinc-600 py-1 rounded-lg cursor-pointer outline-none">
+                        <option value="prettier" class="text-black">Prettier (Default)</option>
+                        <option value="airbnb" class="text-black">Airbnb</option>
+                        <option value="google" class="text-black">Google</option>
+                        <option value="standard" class="text-black">StandardJS</option>
+                        <option value="xo" class="text-black">XO</option>
+                        <option value="eslint-recommended" class="text-black">ESLint Recommended</option>
+                    </select>
+                    <button class="px-3 py-1 border-2 border-zinc-600 rounded-lg mt-4 capitalize" id="formateBtn">Format Code</button>
+                </div>
+                <div class="w-[43.5%] h-[85vh]">
+                    <div
+                        class="relative h-full w-full border-2 border-zinc-700 rounded-xl overflow-hidden flex items-center justify-center">
+                        <div
+                            class="absolute top-3 right-3 h-10 w-10 bg-zinc-950 rounded-lg flex items-center justify-center border-2 border-zinc-600 z-10 cursor-pointer" id="copyBtn">
+                            <i class="ri-file-copy-line text-xl"></i>
+                        </div>
+                        <textarea name="textArea" disabled class="h-full w-full bg-transparent p-2 outline-none placeholder:font-bold placeholder:text-zinc-600" id="dynamicTextRender" placeholder="Formatted code will appear here."></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
