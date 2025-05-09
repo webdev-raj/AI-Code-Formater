@@ -5,7 +5,7 @@ const dynamicTextRender = document.querySelector("#dynamicTextRender");
 const styleSelector = document.querySelector("#styleSelector");
 const copyBtn = document.querySelector("#copyBtn");
 
-const GEMINI_API_KEY = "AIzaSyCQSb7peA9mC48qw2N39Q5p3i7Es05Txco";
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 async function postAndGetReplayApi(userC, styleSelect) {
     let row = await fetch(
         `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`,
