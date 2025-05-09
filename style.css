@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: bold;
+    src: url('./Assets/Fonts/NeueMontreal-Bold.ttf');
+}
+
+@font-face {
+    font-family: fira;
+    src: url('./Assets/Fonts/FiraCode-Regular.ttf');
+}
+
+body {
+    font-family: fira;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+textarea::-webkit-scrollbar {
+    background-color: #141414;
+    width: 5px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+}
